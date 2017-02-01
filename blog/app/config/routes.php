@@ -9,10 +9,14 @@ $router->add(
     [
         "controller" => "index",
         "action"    => "landing"
-    ],
+    ]
+);
+
+$router->add(
+    "angular",
     [
-        "controller"    => "index",
-        "action"        =>  "angular"
+        "controller" => "index",
+        "action"    => "angular"
     ]
 );
 
