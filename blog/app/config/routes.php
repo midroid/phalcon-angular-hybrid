@@ -20,4 +20,12 @@ $router->add(
     ]
 );
 
+$router->add(
+    "catchAndServe",
+    [
+        "controller"    => "index",
+        "action"    => "catchAndServe"
+    ]
+);
+
 return $router;

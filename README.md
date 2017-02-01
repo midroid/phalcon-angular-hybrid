@@ -53,4 +53,9 @@ DocumentRoot /home/ubuntu/workspace/phalcon-angular-hybrid/public
         'charset'     => 'utf8',
     ),
     
+# Install node 6.9.5 LTS with nvm, easy to switch between node versions, using to install angular2 here
+### nvm install 6.9.5
+### nvm use v6.9.5
+
+
 
