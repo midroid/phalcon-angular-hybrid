@@ -26,3 +26,31 @@
 
 # Create project from the command line
 ## phalcon project blog
+
+# Update virtual host to see project
+## run `sudo nano /etc/apache2/sites-enabled/001-cloud9.conf`
+
+// change this line 
+DocumentRoot /home/ubuntu/workspace
+
+// To this
+DocumentRoot /home/ubuntu/workspace/phalcon-angular-hybrid/public
+
+# Setup Database
+### mysql-ctl cli
+### create database blog
+### use blog;
+### select @@hostname;
+### exit
+
+## Edit ~/workspace/phalcon-angular-hybrid/app/config/config.php with database settings
+'database' => array(
+        'adapter'     => 'Mysql',
+        'host'        => 'localhost',
+        'username'    => 'midroid',
+        'password'    => '',// your password
+        'dbname'      => 'blog',
+        'charset'     => 'utf8',
+    ),
+    
+
