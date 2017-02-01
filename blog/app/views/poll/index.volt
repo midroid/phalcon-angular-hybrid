@@ -2,6 +2,6 @@
 
 <ul>
 {% for poll in polls %}
-    <li>{{ link_to('poll/show/' ~ poll.id, poll.question) }}</li>
+    <li>{{ link_to('/poll/show/' ~ poll.id, poll.question) }}</li>
 {% endfor %}
 </ul>
