@@ -63,8 +63,10 @@ DocumentRoot /home/ubuntu/workspace/phalcon-angular-hybrid/public
 ## create a sample application
 ### ng new frontend
 
-## building the project with base url as /dist/, since the output of build is in the dist and we are going to move dist to public/dist/
-### ng build --bh /dist/
+## building the project
+### ng build 
+## copy the build files to the public folder
+### cp -r frontend/dist/* public/
 
 
 

@@ -7,7 +7,7 @@
     <tr>
         <td>{{ option.name }}</td>
         <td>{{ option.number_votes }}</td>
-        <td>{{ link_to('poll/vote/' ~ option.id, 'Vote') }}</td>
+        <td>{{ link_to('/../poll/vote/' ~ option.id, 'Vote') }}</td>
     </tr>
 {% endfor %}
 </table>

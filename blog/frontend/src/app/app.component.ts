@@ -8,7 +8,7 @@ import { AppService } from './app.service';
   providers: [ AppService ]
 })
 export class AppComponent implements OnInit {
-  title = 'Data is feeched using the JSON APIs';
+  title = 'Data is fetched using the JSON APIs';
   polls : [any] ;
   errorMessage : string ;
   constructor (private appService: AppService) {}

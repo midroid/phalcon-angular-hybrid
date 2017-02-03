@@ -5,10 +5,10 @@ class IndexController extends ControllerBase
 
     public function indexAction()
     {
-        $response = new \Phalcon\Http\Response();
-        $response->setStatusCode(200, "OK");
-        $response->redirect("dist/index.html", true);
-        $response->send();
+        // $response = new \Phalcon\Http\Response();
+        // $response->setStatusCode(200, "OK");
+        // $response->redirect("dist/index.html", true);
+        // $response->send();
     }
     
     public function landingAction()
