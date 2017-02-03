@@ -8,6 +8,19 @@ class PollController extends \Phalcon\Mvc\Controller
         $this->view->polls = Polls::find();
     }
     
+    public function pollsApiAction()
+    {
+        $this->view->disable();
+        
+        $response = new \Phalcon\Http\Response();
+        $response->setStatusCode(200, "OK");
+        $response->setContentType('application/json', 'UTF-8');
+        $pollsArray = Polls::find();
+        $response->setJsonContent($pollsArray);
+        $response->send();
+        
+    }
+    
     public function showAction($pollId)
     {
         $this->view->poll = Polls::findFirstById($pollId);
