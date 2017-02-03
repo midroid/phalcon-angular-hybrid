@@ -57,5 +57,14 @@ DocumentRoot /home/ubuntu/workspace/phalcon-angular-hybrid/public
 ### nvm install 6.9.5
 ### nvm use v6.9.5
 
+# install angular-cli 
+### npm install -g angular-cli
+
+## create a sample application
+### ng new frontend
+
+## building the project with base url as /dist/, since the output of build is in the dist and we are going to move dist to public/dist/
+### ng build --bh /dist/
+
 
 
