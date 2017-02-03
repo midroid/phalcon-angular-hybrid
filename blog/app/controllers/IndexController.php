@@ -7,8 +7,7 @@ class IndexController extends ControllerBase
     {
         $response = new \Phalcon\Http\Response();
         $response->setStatusCode(200, "OK");
-        $content = file_get_contents('sample.html');
-        $response->setContent($content);
+        $response->redirect("dist/index.html", true);
         $response->send();
     }
     
@@ -31,7 +30,8 @@ class IndexController extends ControllerBase
     public function catchAndServeAction()
     {
         $response = new \Phalcon\Http\Response();
-        $content = file_get_contents('../../frontend/dist/index.html');
+        $file = __DIR__ + 'abc.text';
+        $content = file_get_contents('/../library/test.html', true);
         echo $content;
         $response->setStatusCode(200, "OK");
         $response->setContent($content);
