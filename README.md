@@ -68,5 +68,17 @@ DocumentRoot /home/ubuntu/workspace/phalcon-angular-hybrid/public
 ## copy the build files to the public folder
 ### cp -r frontend/dist/* public/
 
+## Client served and data fetched with the APIs at 
+### https://phalcon-angular-hybrid-midroid.c9users.io
+
+## Server side rendering at
+### https://phalcon-angular-hybrid-midroid.c9users.io/poll
+
+#Primary approach
+### 1. Serve static files(including client files from public folder)
+### 2 (a). For APIs and server side rendering, make endpoints at apache server to forward the request to different controllers
+### 2 (b). For this DEMO, I have used the same controller but data APIs are served with the different actions, the problem here is to take care of the naming conventions,
+### otherwise in the case of server configuration it is very easy to handle(keeping the same name and adding teh '/api/' prefix )
+
 
 
